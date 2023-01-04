@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual ejercicio Acelerando 1</title>
+</head>
+<body>
+    <h1>Acelerando 1</h1>
+
+    <p>El ejercicio empieza explicándonos diciendo que HEAD suele referirse al nombre de una rama y cuando creas un commit, dicha rama se altera y ese cambio se puede ver a través del HEAD
+        ,que es el commit sobre el que estamos trabajando en ese momento y siempre apunta al commit más reciente.</p>
+
+    <p>Para completar el nivel solo tenemos que "Detachear" HEAD de la rama 'bugFix' para "atachearla" al último commit. Pero, antes de completar el ejercicio tendremos que saber qué significa "Detachear"
+    </p>
+
+    <h2>Detachear</h2>
+
+    <p>Detachear/desajuntar HEAD significa adjuntar HEAD a un commit en vez de a una rama(branch). Antes de hacer nada se ve así:</p>
+    <img src="images1/Acelerando1_img2.png" alt="Ejemplo inicial">
+    <p>Y despues de detachear HEAD se ve así:</p>
+    <img src="images1/Acelerando1_img3.png" alt="Ejemplo 2 con el HEAD en el commit">
+
+    <p>Como podéis ver en la 1ª imagen no se aprecia el HEAD, eso es porque como está apuntando a la rama 'main' no es necesario que se vea, ya que el HEAD suele estar apuntando a las ramas, por lo que 
+        se sobreentiende que la secuencia es esta: HEAD-> main->C1. <br>
+        Sin embargo, en la 2ª imagen, que es cuando ya hemos detacheado('separado') HEAD de main y lo hemos atacheado('unido') a C1, vemos que HEAD apunta claramente a C1, y nos lo enseña para que no nos 
+        confundamos y pensemos que HEAD apunta a la rama sino que, en esta ocasión, apunta al commit porque así lo hemos querido esta vez.</p>
+
+    <p>Aclarado una vez lo que es Detachear, pasemos a ver lo que nos pide el ejercicio:</p>
+    
+    <img src="images1/Acelerando1_img4.png" alt="Enunciado del ejercicio">
+    <p>La situación inicial es esta:</p>
+    <img src="images1/Acelerando1_img5.png" alt="Inicio del ejercicio">
+    <p>Y queremos llegar a esto:</p>
+    <img src="images1/Acelerando1_img7.png" alt=" Solución">
+
+    <p>Para llegar a la solución solo tenemos que cambiar de la rama 'main' al commit 'C1'. Para ello usamos el comando "git checkout" y el nombre de a donde queremos cambiar el HEAD:</p>
+    <img src="images1/Acelerando1_img6.png" alt="comando para resolver el ejercicio">
+
+    <p>Al escribir eso y pulsar enter nos quedaría exactamente igual que lo que nos pedían: </p>
+    <img src="/images1/Acelerando1_img7.png" alt="Solución">
+    
+    <p>Esto sería todo lo que hay que saber para hacer este ejercicio y entenderlo</p>
+</body>
+</html>
